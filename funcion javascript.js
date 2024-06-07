@@ -1,18 +1,20 @@
+function regalo() {
+var valor;
 
-Math.floor(Math.random() * 10000);
-cliente1 = Math.floor(Math.random() * 10000);
-cliente2 = Math.floor(Math.random() * 10000);
-cliente3 = Math.floor(Math.random() * 10000);
-cliente4 = Math.floor(Math.random() * 10000);
-cliente5 = Math.floor(Math.random() * 10000);
-cliente6 = Math.floor(Math.random() * 10000);
-cliente7 = Math.floor(Math.random() * 10000);
-cliente8 = Math.floor(Math.random() * 10000);
-cliente9 = Math.floor(Math.random() * 10000);
-cliente10 = Math.floor(Math.random() * 10000);
-listaclientes = (cliente1, cliente2, cliente3, cliente4, cliente5, cliente6, cliente7, cliente8, cliente9, cliente10)
+for (cliente = 1; cliente <= 10; cliente++) {
+valor = Math.floor(Math.random() * 15000)
 
+if (valor > 10000) {
+    console.log("Mandar a cliente" + cliente + ":" + "cesta con jamón");
+}
+else if (valor > 1000) {
+    console.log("Mandar a cliente" + cliente + ":" + "cesta sin jamón");
+}
+else {
+    console.log("Mandar a cliente" + cliente + ":" + "una cartita de mierda");
+}
+}
 
+}
 
-console-log 
-
+regalo();
