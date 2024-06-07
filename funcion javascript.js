@@ -4,17 +4,21 @@ var valor;
 for (cliente = 1; cliente <= 10; cliente++) {
 valor = Math.floor(Math.random() * 15000)
 
-if (valor > 10000) {
+switch (valor) {
+    case 15000:
     console.log("Mandar a cliente" + cliente + ":" + "cesta con jamón");
+    break;
 }
-else if (valor > 1000) {
+switch (valor) {
+    case 1000:
     console.log("Mandar a cliente" + cliente + ":" + "cesta sin jamón");
+    break;
 }
-else {
+switch {
     console.log("Mandar a cliente" + cliente + ":" + "una cartita de mierda");
+    break;
 }
 }
 
 }
-
 regalo();
